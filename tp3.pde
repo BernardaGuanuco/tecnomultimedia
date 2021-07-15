@@ -2,13 +2,13 @@
   Tp n° 3: Ilusión optica
   Alumna : María Bernarda Guanuco
   Legajo : 88153/4
-  URL video: 
+  URL video: https://youtu.be/sDV0xL53b4E
 */
 
 int cant=20;
 int tam;
 int seCorre;
-int tono ;
+int tono;
 
 void setup (){
   size (600,600);
@@ -16,7 +16,6 @@ void setup (){
   tono = 0;
   strokeWeight(2);
   background (255);
-  
 }
 
 void draw (){
@@ -40,14 +39,12 @@ void draw (){
   }else{
     seCorre -= 17;
   }
-
-  }
+}
   fill (200);
   noStroke ();
   rect (570,15,40,570);
   fill (0);
   text ("R", 580,height/2);
-
 }
    
  void keyPressed (){
@@ -63,8 +60,8 @@ void draw (){
    if (keyCode == DOWN){
    tono = color (255,0,255);
    }
-   
  }
+ 
  void mousePressed (){
    if  (mouseX>= 570 && mouseY <= 570 && mouseY >15 ) {
     tono = 0;
